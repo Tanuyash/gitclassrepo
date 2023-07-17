@@ -13,4 +13,21 @@ System.out.println("File is already present ");
 e.printStackTrace();
 }
 }
+#feature202 changes made by John on ICICI bank
+public void givenDir_whenMkdir_thenDirIsDeleted() {
+    File directory = new File("dir");
+    assertTrue(directory.mkdir());
+    assertTrue(directory.delete());
+}
+
+@Test
+public void givenFile_whenCreateNewFile_thenFileIsDeleted() {
+    File file = new File("file.txt");
+    try {
+        assertTrue(file.createNewFile());
+    } catch (IOException e) {
+        fail("Could not create " + "file.txt");
+    }
+    assertTrue(file.delete());
+}
 }
