@@ -13,4 +13,15 @@ System.out.println("File is already present ");
 e.printStackTrace();
 }
 }
+#feature201 changes made by Ann for SBI bank project
+import java.io.File;
+public class FilePropTest2 {
+public static void main(String[] args) {
+File fil_nm=new File("C:/Users/adutta/documents");
+String all_file_names[]=fil_nm.list();
+for(String enlist_filename:all_file_names){
+System.out.println(enlist_filename);
+}
+}
+}
 }
