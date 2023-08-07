@@ -15,3 +15,7 @@ dev team working on this few commit chnages
 
 #CI job changes
 Jenkins jobs which needs to be build periodically or by special schedules.
+
+#webhook job configuration
+When there is any change or modification in the github repository files
+Jenkins will trigger and fetch the latest code from git
